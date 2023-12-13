@@ -3,7 +3,7 @@ import { TodoItem } from "./TodoItem";
 
 export function TodoList({ todos, toggleTodo, deleteTodo }) {
   return (
-    <ul className="list">
+    <ul className="list-group-flush">
       {todos.length === 0 && "No Todos to display"}
       {todos.map((todo) => {
         return (

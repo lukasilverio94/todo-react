@@ -15,8 +15,8 @@ function App() {
   useEffect(() => {
     localStorage.setItem("ITEMS", JSON.stringify(todos));
   }, [todos]);
-
   //End Local storage logic
+
   function addTodo(title) {
     setTodos((currentTodos) => {
       return [
@@ -43,11 +43,11 @@ function App() {
     });
   }
   return (
-    <>
+    <div className="container card mt-5 bg-dark bg-gradient text-light p-5">
       <NewTodoForm onSubmit={addTodo} />
-      <h1 className="header">Todo List</h1>
+      <h1 className="fs-3 mb-3">Task List: </h1>
       <TodoList todos={todos} deleteTodo={deleteTodo} toggleTodo={toggleTodo} />
-    </>
+    </div>
   );
 }
 
