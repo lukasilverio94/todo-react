@@ -12,7 +12,7 @@ export function NewTodoForm({ onSubmit }) {
   }
 
   return (
-    <form onSubmit={handleSubmit} className="new-item-form">
+    <form onSubmit={handleSubmit}>
       <div>
         <label htmlFor="item" id="new-item" className="mb-3 display-6">
           Add your tasks:

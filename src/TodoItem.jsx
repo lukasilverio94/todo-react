@@ -6,7 +6,7 @@ export function TodoItem({ completed, id, title, toggleTodo, deleteTodo }) {
   return (
     <li
       id="todo_list_item"
-      className="list-group-item mb-2 d-flex justify-content-between  border-bottom border-light py-2"
+      className="list-group-item mb-2 d-flex  justify-content-between  border-bottom border-light py-2 text-wrap"
     >
       <label>
         <input

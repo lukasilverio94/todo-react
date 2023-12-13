@@ -43,7 +43,7 @@ function App() {
     });
   }
   return (
-    <div className="container card mt-5 bg-dark bg-gradient text-light p-5">
+    <div className="container card mt-5 bg-dark bg-gradient text-light p-5 ">
       <NewTodoForm onSubmit={addTodo} />
       <h1 className="fs-3 mb-3">Task List: </h1>
       <TodoList todos={todos} deleteTodo={deleteTodo} toggleTodo={toggleTodo} />
