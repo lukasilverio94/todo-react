@@ -13,8 +13,8 @@ export function NewTodoForm({ onSubmit }) {
 
   return (
     <form onSubmit={handleSubmit} className="new-item-form">
-      <div className="form-row">
-        <label htmlFor="item" id="new-item">
+      <div>
+        <label htmlFor="item" id="new-item" className="mb-3 display-6">
           Add your tasks:
         </label>
         <input
@@ -22,9 +22,10 @@ export function NewTodoForm({ onSubmit }) {
           onChange={(e) => setNewItem(e.target.value)}
           type="text"
           id="item"
+          className="form-control"
         />
       </div>
-      <button className="btn">Add</button>
+      <button className="btn btn-success mt-2 w-100 mb-2">Add</button>
     </form>
   );
 }
